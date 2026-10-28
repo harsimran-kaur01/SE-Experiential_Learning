@@ -1,0 +1,25 @@
+[1mcar_rental.py[m[36m:[m2[36m:[m1[36m:[m [1m[31mF401[m 'json' imported but unused
+[1mcar_rental.py[m[36m:[m16[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m19[36m:[m80[36m:[m [1m[31mE501[m line too long (96 > 79 characters)
+[1mcar_rental.py[m[36m:[m22[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m23[36m:[m80[36m:[m [1m[31mE501[m line too long (92 > 79 characters)
+[1mcar_rental.py[m[36m:[m25[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m29[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m31[36m:[m80[36m:[m [1m[31mE501[m line too long (91 > 79 characters)
+[1mcar_rental.py[m[36m:[m33[36m:[m80[36m:[m [1m[31mE501[m line too long (110 > 79 characters)
+[1mcar_rental.py[m[36m:[m36[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m41[36m:[m5[36m:[m [1m[31mE722[m do not use bare 'except'
+[1mcar_rental.py[m[36m:[m44[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m47[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m50[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m56[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m62[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m65[36m:[m80[36m:[m [1m[31mE501[m line too long (123 > 79 characters)
+[1mcar_rental.py[m[36m:[m70[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m75[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m78[36m:[m34[36m:[m [1m[31mE712[m comparison to True should be 'if cond is True:' or 'if cond:'
+[1mcar_rental.py[m[36m:[m82[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mcar_rental.py[m[36m:[m88[36m:[m80[36m:[m [1m[31mE501[m line too long (83 > 79 characters)
+[1mcar_rental.py[m[36m:[m89[36m:[m80[36m:[m [1m[31mE501[m line too long (89 > 79 characters)
+[1mcar_rental.py[m[36m:[m90[36m:[m80[36m:[m [1m[31mE501[m line too long (84 > 79 characters)
+[1mcar_rental.py[m[36m:[m101[36m:[m1[36m:[m [1m[31mE305[m expected 2 blank lines after class or function definition, found 1
