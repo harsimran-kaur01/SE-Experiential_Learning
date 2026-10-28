@@ -1,0 +1,1 @@
+[1mLab5\car_rental.py[m[36m:[m44[36m:[m80[36m:[m [1m[31mE501[m line too long (85 > 79 characters)

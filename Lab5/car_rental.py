@@ -1,3 +1,4 @@
+
 """Car rental demo with safer validation and file handling."""
 
 import hashlib
@@ -11,7 +12,9 @@ from datetime import datetime
 fleet = {}
 bookings = []
 conn = sqlite3.connect(":memory:")
-conn.execute("CREATE TABLE customers (name TEXT, licence TEXT, phone TEXT)")
+conn.execute(
+    "CREATE TABLE customers (name TEXT, licence TEXT, phone TEXT)"
+)
 
 
 def add_car(plate, model="Unknown", daily_rate=0, features=None):
@@ -41,7 +44,10 @@ def register_customer(name, licence, phone):
 
 def find_customer(name):
     """Find customers by exact name safely."""
-    return conn.execute("SELECT * FROM customers WHERE name = ?", (name,)).fetchall()
+    return conn.execute(
+        "SELECT * FROM customers WHERE name = ?",
+        (name,),
+    ).fetchall()
 
 
 def rent_car(plate, customer, start, end):
@@ -55,7 +61,10 @@ def rent_car(plate, customer, start, end):
 
     start_date = datetime.strptime(start, "%Y-%m-%d")
     end_date = datetime.strptime(end, "%Y-%m-%d")
-    days = (end_date - start_date).days
+
+    rental_period = end_date - start_date
+    days = rental_period.days
+
     if days <= 0:
         raise ValueError("End date must be after start date")
 
@@ -103,7 +112,8 @@ def apply_promo(rule, amount):
 
 def is_valid_plate(plate):
     """Check the expected Indian vehicle plate format."""
-    return bool(re.fullmatch(r"[A-Z]{2}[0-9]{2}[A-Z]{1,2}[0-9]{4}", plate))
+    pattern = r"[A-Z]{2}[0-9]{2}[A-Z]{1,2}[0-9]{4}"
+    return bool(re.fullmatch(pattern, plate))
 
 
 def write_receipt(booking):
@@ -136,7 +146,11 @@ def admin_login(user, password):
 
 def available_cars():
     """Return the number plates of all available cars."""
-    return [plate for plate, car in fleet.items() if car["available"]]
+    return [
+        plate
+        for plate, car in fleet.items()
+        if car["available"]
+    ]
 
 
 def main():
