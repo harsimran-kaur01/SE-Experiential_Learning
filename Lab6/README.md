@@ -37,6 +37,11 @@ A program can achieve 100% statement coverage without achieving 100% branch cove
 
 Branch coverage therefore provides additional information about the completeness of test cases.
 
+### Other Types of Coverage
+
+- **Path Coverage:** Measures how many unique execution paths through a program have been tested.
+- **Function Coverage:** Measures whether each function in the program has been called during testing.
+
 ## Coverage Results
 
 ### Code Coverage
